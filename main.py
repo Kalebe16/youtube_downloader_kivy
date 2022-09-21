@@ -12,11 +12,8 @@ import re
 import pytube
 import requests
 from pytube import YouTube
-#import moviepy.editor as mp 
 import webbrowser
-#from moviepy.video.io.VideoFileClip import VideoFileClip 
-#---------------------------------------
-# Específicamente para criar exe no Windows
+
 import os, sys
 from kivy.resources import resource_add_path, resource_find
 
@@ -56,7 +53,7 @@ class JanelaPrincipal(Screen):
                 if re.search('mp4', file):                 #If verificando se o arquivo e .MP4                    
                     mp4_path = os.path.join(path1 , file)
                     os.remove(mp4_path)
-#-------------------------------------------------------------
+        #-------------------------------------------------------------
 
         return super().on_pre_enter(*args)
     
